@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="startBox hide flex">
+      <div class="menu startMenu hide flex">
+        <h1>Snake Game</h1>
+        <div>
+          <button class="startBtn">게임선택</button>
+          <button class="menualBtn">게임방법</button>
+        </div>
+      </div>
+      <div class="menu gameMenu hide">
+        <span class="material-icons-outlined backArrow backStart"
+          >arrow_back</span
+        >
+        <h1>게임선택</h1>
+        <div>
+          <button class="settingBtn">일반게임</button>
+          <button class="rankBtn">랭크게임</button>
+        </div>
+      </div>
+      <div class="settingBox hide">
+        <span class="material-icons-outlined backArrow backGameMenu"
+          >arrow_back</span
+        >
+        <div class="mapSizeLabel">
+          <div class="label">
+            <span>맵 크기</span>
+          </div>
+          <div class="setting">
+            <span class="prevBtn">◀</span>
+            <span class="num">보통</span>
+            <span class="nextBtn">▶</span>
+          </div>
+        </div>
+        <div class="speedLabel">
+          <div class="label">
+            <span>속도</span>
+          </div>
+          <div class="setting">
+            <span class="prevBtn">◀</span>
+            <span class="num">보통</span>
+            <span class="nextBtn">▶</span>
+          </div>
+        </div>
+        <div class="tailLabel">
+          <div class="label">
+            <span>꼬리 갯수</span>
+          </div>
+          <div class="setting">
+            <span class="prevBtn">◀</span>
+            <span class="num">3</span>
+            <span class="nextBtn">▶</span>
+          </div>
+        </div>
+        <div>
+          <button class="normalBtn">게임시작</button>
+        </div>
+      </div>
+    </div>
+    <div class="canvasBox hide"></div>
+    <div class="endBox hide">
+      <div class="scoreBox">
+        <span>Score</span>
+        <span class="score"></span>
+        <button class="initBtn">처음으로</button>
+      </div>
+    </div>
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

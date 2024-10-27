@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: "Do Hyeon", sans-serif;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.counter {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.startBox,
+.endBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.canvasBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #000;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.menu>div {
+    display: flex;
+}
+
+.scoreBox button,
+.settingBox button,
+.menu button {
+    width: 100px;
+    height: 50px;
+    outline: 0;
+    border: 3px solid #000;
+    background-color: #fff;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    font-family: "Do Hyeon", sans-serif;
+    font-size: 24px;
+}
+
+.scoreBox button:hover,
+.settingBox button:hover,
+.menu button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.menu button:nth-child(1) {
+    margin-right: 30px;
+}
+
+.backArrow {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.settingBox {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #000;
+    flex-direction: column;
+    position: relative;
+    font-size: 22px;
+}
+
+.settingBox>div {
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.settingBox .label {
+    width: 200px;
+}
+
+.settingBox .setting {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settingBox>div:last-child {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.nextBtn,
+.prevBtn {
+    cursor: pointer;
+}
+
+.scoreBox {
+    width: 300px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #000;
+    flex-direction: column;
+    position: relative;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.scoreBox button {
+    margin-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
